@@ -33,6 +33,6 @@ Telegram.WebApp.onEvent("mainButtonClicked", () => {
 
 const userCard = document.getElementById("usercard")
 let p = document.createElement("p");
-p.innerHTML = `${tg.initDataUnsafe.first_name} ${tg.initDataUnsafe.last_name}`;
+p.innerHTML = `${tg.initDataUnsafe.user.first_name} ${tg.initDataUnsafe.user.last_name}`;
 
 userCard.appendChild(p);
